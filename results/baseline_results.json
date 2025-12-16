@@ -1,0 +1,8 @@
+{
+  "baseline_accuracy": 0.3045267489711934,
+  "baseline_f1_macro": 0.16217902907224885,
+  "trained_accuracy": 0.6255,
+  "trained_f1_macro": 0.6262,
+  "improvement_accuracy": 0.3209732510288065,
+  "improvement_f1_macro": 0.46402097092775113
+}

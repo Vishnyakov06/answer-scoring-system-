@@ -1,0 +1,102 @@
+{
+  "timestamp": "20251128_174545",
+  "binary_model_path": "rubert_binary_classifier_fixed_v2",
+  "four_class_dataset": "../datasets/bigdata_eval_L1_100_percent.csv",
+  "original_distribution": {
+    "2": 809,
+    "3": 822,
+    "4": 823,
+    "5": 822
+  },
+  "strategies": {
+    "strict": {
+      "description": "Строгая (2,3->0; 4,5->1)",
+      "accuracy": 0.6550671550671551,
+      "f1_macro": 0.617878025023917,
+      "f1_weighted": 0.6173685848863384,
+      "confusion_matrix": [
+        [
+          1584,
+          47
+        ],
+        [
+          1083,
+          562
+        ]
+      ],
+      "true_distribution": [
+        1631,
+        1645
+      ],
+      "pred_distribution": [
+        2667,
+        609
+      ],
+      "binary_distribution": {
+        "0": 1631,
+        "1": 1645
+      }
+    },
+    "liberal": {
+      "description": "Либеральная (2->0; 3,4,5->1)",
+      "accuracy": 0.43162393162393164,
+      "f1_macro": 0.42949760647411717,
+      "f1_weighted": 0.4118703709821552,
+      "confusion_matrix": [
+        [
+          807,
+          2
+        ],
+        [
+          1860,
+          607
+        ]
+      ],
+      "true_distribution": [
+        809,
+        2467
+      ],
+      "pred_distribution": [
+        2667,
+        609
+      ],
+      "binary_distribution": {
+        "0": 809,
+        "1": 2467
+      }
+    },
+    "middle": {
+      "description": "Средняя (2,3,4->0; 5->1)",
+      "accuracy": 0.7982295482295483,
+      "f1_macro": 0.7045044513957204,
+      "f1_weighted": 0.7874092524975128,
+      "confusion_matrix": [
+        [
+          2230,
+          224
+        ],
+        [
+          437,
+          385
+        ]
+      ],
+      "true_distribution": [
+        2454,
+        822
+      ],
+      "pred_distribution": [
+        2667,
+        609
+      ],
+      "binary_distribution": {
+        "0": 2454,
+        "1": 822
+      }
+    }
+  },
+  "summary": {
+    "total_samples_4class": 3276,
+    "best_strategy": "middle",
+    "best_accuracy": 0.7982295482295483
+  }
+}

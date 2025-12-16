@@ -1,0 +1,22 @@
+{
+  "timestamp": "20251125_185757",
+  "confusion_matrix": [
+    [
+      63,
+      0
+    ],
+    [
+      2,
+      60
+    ]
+  ],
+  "class_names": [
+    "2",
+    "5"
+  ],
+  "grade_distribution": [
+    {
+      "sample_id": 0,
+      "true_grade": "5",
+      "predicted_grade": "2",
+      "is_correct": 
